@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/js/index.js"></script>
+  </head>
+  <body>
+    <div class="base-content">
+      <video controls="false" autoplay muted loop>
+        <source src="./src/assets/base.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="screen left">
+      <iframe
+        id="yt-livestream"
+        src="https://www.youtube.com/embed/4rmf-lk3ito?autoplay=1&mute=1&controls=0&showinfo=0"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="screen center">
+      <video autoplay muted loop>
+        <source src="./src/assets/center.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="screen right">
+      <div class="content">
+        <video autoplay muted loop>
+          <source src="./src/assets/right.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </body>
+</html>
